@@ -41,6 +41,26 @@
 
 - [Constants](https://github.com/tomoya92/java-utils/blob/master/src/main/java/com/github/javautils/Constants.java)
 
+## 本地安装使用
+
+克隆并编译安装
+
+```
+git clone https://github.com/tomoya92/java-utils.git
+cd java-utils
+mvn install -Dmaven.test.skip=true
+```
+
+在个人项目里的`pom.xml`里添加依赖
+
+```xml
+<dependency>
+    <groupId>com.github</groupId>
+    <artifactId>java-utils</artifactId>
+    <version>1.0</version>
+</dependency>
+```
+
 ## 贡献
 
 欢迎提pr
@@ -49,6 +69,10 @@
 
 [@qq347447474](https://github.com/qq347447474)
 [JFinal工具类](http://git.oschina.net/jfinal/jfinal/tree/master/src/com/jfinal/kit?dir=1&filepath=src%2Fcom%2Fjfinal%2Fkit&oid=3712944c6c6eaa8531193b50681913617c0de33f&sha=15064f54a9d73939bd72a56f698ad95972654f09)
+
+## 免责声明
+
+本开源仓库内的工具类代码来自网络收集以及码农朋友提供,如果涉及侵权,请告知删除
 
 ## 开源协议
 
