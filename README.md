@@ -28,6 +28,7 @@
 ### 网络
 
 - [HttpUtil](https://github.com/tomoya92/java-utils/blob/master/src/main/java/com/github/javautils/net/HttpUtil.java)
+- [IpUtil](https://github.com/tomoya92/java-utils/blob/master/src/main/java/com/github/javautils/net/IpUtil.java)
 
 ### 正则
 
