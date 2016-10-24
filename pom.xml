@@ -6,7 +6,7 @@
 
     <groupId>com.github</groupId>
     <artifactId>java-utils</artifactId>
-    <version>1.1</version>
+    <version>1.0</version>
 
     <dependencies>
         <dependency>
@@ -15,6 +15,13 @@
             <version>3.1.0</version>
         </dependency>
     </dependencies>
+
+    <distributionManagement>
+        <repository>
+            <id>maven-repo</id>
+            <url>file:/Users/tomoya/git/github/java-utils/repo</url>
+        </repository>
+    </distributionManagement>
 
     <build>
         <plugins>
@@ -32,6 +39,18 @@
                         <bootclasspath>${java.home}/lib/rt.jar:${java.home}/lib/jce.jar</bootclasspath>
                     </compilerArguments>
                 </configuration>
+            </plugin>
+            <plugin>
+                <artifactId>maven-source-plugin</artifactId>
+                <version>2.4</version>
+                <executions>
+                    <execution>
+                        <phase>package</phase>
+                        <goals>
+                            <goal>jar-no-fork</goal>
+                        </goals>
+                    </execution>
+                </executions>
             </plugin>
         </plugins>
     </build>
