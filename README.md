@@ -47,6 +47,15 @@
 
 克隆并编译安装
 
+windows电脑还需要修改一下pom.xml里的插件配置
+
+```
+<!--如果是windows,请将bootclasspath里的:改成;-->
+<bootclasspath>${java.home}/lib/rt.jar:${java.home}/lib/jce.jar</bootclasspath>
+```
+
+然后安装下面命令操作就可以将 `java-utils` 安装到本地了
+
 ```
 git clone https://github.com/tomoya92/java-utils.git
 cd java-utils
